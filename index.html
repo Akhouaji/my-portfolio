@@ -8,6 +8,78 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <nav id="desktop-nav">
+        <div class="logo">Akhouaji Mohamed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#experience">Kenntnisse</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="humberger-nav">
+        <div class="logo">Akhouaji Mohamed</div>
+        <div class="humberger-menu">
+            <div class="humberger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Über mich</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">ÜErfahrung & Bildung</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container pic1">
+            <img src="./assets/profile-pic.png" alt="My Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hallo, ich bin</p>
+            <h1 class="title">Mohamed Akhouaji</h1>
+            <p class="section__text__p2">Angehender Entwickler</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Lebenslauf unterladen</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Zum Kontakt</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/akhouaji-mohamed-531485334'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/Akhouaji'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">Über mich</h1>
+        <p class="section__text__p1">mehr erfahren</p>
+        <div class="section-container">
+            <div class="section__pic-container pic2">
+                <img src="./assets/peofile-pic-2.png.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Erfahrung icon" class="icon">
+                        <h3>Erfahrung</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim, obcaecati ea doloremque, a laboriosam mollitia non nulla optio aliquam eos molestiae provident odit praesentium qui delectus, voluptas architecto eligendi.</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Bildung icon" class="icon">
+                        <h3>Bildung</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim, obcaecati ea doloremque, a laboriosam mollitia non nulla optio aliquam eos molestiae provident odit praesentium qui delectus, voluptas architecto eligendi.</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga porro tempore consequuntur et amet! Porro, accusantium. Recusandae tempora ab ea nesciunt perspiciatis id minus impedit in fugiat, praesentium voluptatum autem!</p>
+                </div>
+            </div>
+        </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./experience'">
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
