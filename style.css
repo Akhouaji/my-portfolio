@@ -324,6 +324,14 @@ section {
     transition: 1s ease;
 }
 
+.about-lists{
+    list-style-type: none;
+    font-style: italic;
+    font-size: large;
+}
+.s {
+    font-size: small;
+}
 /*Exp Section*/
 
 #experience{
