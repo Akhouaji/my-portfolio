@@ -327,11 +327,22 @@ section {
 .about-lists{
     list-style-type: none;
     font-style: italic;
-    font-size: large;
+    font-size: large;  
 }
 .s {
     font-size: small;
 }
+
+.ali{
+    transition: box-shadow 0.2s ease-out;
+    border-radius: 2rem;
+}
+
+.ali:hover{
+    box-shadow: 15px 15px 20px;
+    transition: 0.2s ease-in;
+}
+
 /*Exp Section*/
 
 #experience{
